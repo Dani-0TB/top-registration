@@ -63,6 +63,7 @@ body {
 }
 
 .subtitle {
+  margin-top: 2rem;
   margin-bottom: 0.3rem;
   font-size: 20pt;
   font-weight: 400;
@@ -87,7 +88,7 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-flow: row wrap;
-  box-shadow: 3px 0px 3px 0.3px #e0d8c6;
+  box-shadow: 3px 2px 3px 0.3px #e0d8c6;
 }
 
 .control-container {
@@ -101,7 +102,7 @@ body {
   padding: 0.5rem;
   font-size: 12pt;
   margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
   flex: 1 1 200px;
   border: solid 1px #E3E1D9;
   border-radius: 0.2rem;
@@ -116,10 +117,10 @@ body {
 
 .btn-submit {
   padding: 0.6rem 4rem;
-  margin-bottom: 0.5rem;
-  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
   max-width: fit-content;
-  background-color: #BEDBBB;
+  background-color: #c5c76a;
   border-radius: 0.2rem;
   border: none;
   font-size: 12pt;
@@ -128,13 +129,25 @@ body {
 }
 
 .btn-submit:hover {
-  background-color: #d5ecd2;
+  background-color: #acc457;
 }
 
 .btn-submit:active {
-  background-color: #8DB596;
+  background-color: #ccd371;
+}
+
+.error {
+  padding: 0.2rem 0;
+  height: 1rem;
+  color: #ff3636;
+  font-size: 12px;
+  overflow: hidden;
 }
 
 .pad {
-  padding:0 1rem;
+  padding:0 2rem;
+}
+
+.hidden {
+  display: block;
 }
