@@ -3,8 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script defer src="src/main.js"></script>
 </head>
-  
+  <div class="container">
+
+    <div class="header">
+      <div class="header-mask">
+        <div class="title-row">
+          <h1 class="title">
+            Letters and Posts
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <h2 class="subtitle pad">Welcome to Letters and Posts Reader's Club platform</h2>
+      <p class="legend pad">
+        A place for readers like you to share, read and discuss the topics you want. Found a topic of your interest?
+        Then you can find just the right people to share and connect with! Can't find it? Then you can create a new
+        group and find people to join in!
+      </p>
+      <p class="legend-danger pad">
+        *This is a fictitious service for The Odin Project
+      </p>
+      <form id="f-signup" action="submit" method="get" class="form">
+        <div class="control-container">
+          <label for="name">First Name</label>
+          <div class="error">
+            <p class="error-msg hidden"></p>
+          </div>
+          <input id="name" type="text" class="form-control" minlength="2" maxlength="60" required>
+        </div>
+        <div class="control-container">
+          <label for="surname">Last Name</label>
+          <div class="error">
+            <p class="error-msg hidden"></p>
+          </div>
+          <input id="surname" type="text" class="form-control" minlength="2" maxlength="60" required>
+        </div>
+        <div class="control-container">
+          <label for="email">Email</label>
+          <div class="error">
+            <p class="error-msg hidden"></p>
+          </div>
+          <input id="email" type="email" class="form-control" minlength="6" maxlength="60" required>
+        </div>
+        <div class="control-container">
+          <label for="number">Phone Number</label>
+          <div class="error">
+            <p class="error-msg hidden"></p>
+          </div>
+          <input id="number" type="number" class="form-control" required>
+        </div>
+        <div class="control-container">
+          <label for="password1">Password</label>
+          <div class="error">
+            <p id="e-pass1" class="error-msg hidden"></p>
+          </div>
+          <input id="password1" type="password" class="form-control" minlength="8" maxlength="60" required>
+        </div>
+        <div class="control-container">
+          <label for="password2">Confirm Password</label>
+          <div class="error">
+            <p id="e-pass2" class="error-msg hidden"></p>
+          </div>
+          <input id="password2" type="password" class="form-control" minlength="8" maxlength="60" required>
+        </div>
+      </form>
+      <button form="f-signup" id="btn-submit" type="submit" class="btn-submit">Register</button>
+      <p class="pad">Already have an account? <a href="">Sign in!</a></p>
+    </div>
+  </div>
 </body>
 </html>
