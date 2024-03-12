@@ -200,5 +200,11 @@ body {
 }
 
 .hidden {
-  display: block;
+  display: none;
+}
+
+.content {
+  padding: 4rem;
+  background-color: #ffffff;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
